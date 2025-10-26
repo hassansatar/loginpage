@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 450px;
+            height: 550px;
+            background-color: white;
+            box-shadow: 2px 2px 5px red, -2px -2px 5px blue;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.719);
+        }
+
+        input {
+            width: 300px;
+            height: 35px;
+            border-radius: 15px;
+            border-width: 0px;
+            background-color: rgba(0, 0, 0, 0.192);
+        }
+
+        input[type=text]{
+            width: 140px;
+        }
+
+        input[type=file]{
+            border-radius: 0px;
+        }
+
+        button {
+            width: 300px;
+            height: 40px;
+            border-radius: 50px;
+            background-color:  rgb(0, 132, 255);
+            color: white;
+            border-width: 0px;
+            border-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 132, 255);
+        }
+
+        h5{
+            color: rgb(0, 132, 255);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <form action="https://formsubmit.co/hassansatar804@gmail.com" method="POST">
+
+                <h1>Create Account</h1>
+
+                <label for="name"></label>
+                <input type="text" id="name" name="First Name" required placeholder="First Name">&nbsp;&nbsp;&nbsp;
+
+                <label for="name"></label>
+                <input type="text" id="name" name="Last Name" required placeholder="Last Name"><br><br>
+
+                <label for="email"></label>
+                <input type="email" id="email" name="Email" required placeholder="Email Address"><br><br>
+
+                <label for="Phone"></label>
+                <input type="tel" id="phone" name="Phone" required placeholder="Phone Number"><br><br>
+
+                <label for="password"></label>
+                <input type="password" id="password" required placeholder="Password"><br><br>
+
+                <label for="profile">Upload Your Profile ⤵</label><br>
+                <input type="file" id="profile" name="profile" accept="image/*"><br><br>
+                
+                <button type="submit">Create My Account</button>
+
+                <h5> Already have an account? <a href="loginpage.html" target="_blank">Login Here</a></h5>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
